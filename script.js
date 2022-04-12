@@ -9,7 +9,5 @@ setInterval(() => {
     hour.style.transform    = `rotate(${hrotation}deg)`;
     minute.style.transform = `rotate(${mrotation}deg)`;
     second.style.transform = `rotate(${srotation}deg)`;
-    // document.getElementById('background').style.backgroundImage="url(https://source.unsplash.com/1600x900/?dark,simple-background,black)";
     document.getElementById('background').style.backgroundImage="url(https://source.unsplash.com/random/1600x900/)";
 }, 1000);
-//  background.style.backgroundImage=`url()`;

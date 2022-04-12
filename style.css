@@ -1,1 +1,102 @@
-body {background-color: black;margin: 0;padding: 0;}#background{display: flex;justify-content: space-around;align-items: center;background-size: cover;background-position: center;width: 100vw;height: 100vh;}#box {height: 48vw;margin: auto;width: 48vw;background-image: url(Clock-bg.png);background-color: #ffffff7c;background-size: cover;filter: invert(100%);border-radius: 50%;}#circle img {height: 18px;width: 18px;}#circle {border-radius: 50%;position: absolute;margin: auto;left: 49%;top: 50%;}#hour {height: 23%;width: 0.5%;background-color: rgb(0, 0, 0);border-radius: 25%;position: absolute;left: 50.1%;top: 28.5%;transform-origin: bottom;transition: 1s;}#minute {height: 38%;width: 0.35%;border-radius: 25%;background-color: #000000;position: absolute;left: 50%;top: 13.5%;transform-origin: bottom;transition: 1s;}#second {height: 46%;width: 0.2%;border-radius: 25%;background-color: rgb(163, 163, 163);position: absolute;left: 50.1%;top: 5.5%;transform-origin: bottom;transition: 1s;}#com{font-family: Amsterdam, "Noto Nastaliq Urdu", Helvetica, sans-serif;position: relative;font-size: 1.3rem;font-weight: 500;right: 60px;color: black;}a{text-decoration: none;}
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (max-width:786px){
+    #com{
+        display: none;
+    }
+    #circle{
+        display: none;
+
+    }
+    #box{
+        width:  75vw !important;
+        height: 75vw !important;
+    }
+}
+
+#background {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#box {
+    height: 48vw;
+    margin: auto;
+    width: 48vw;
+    background-image: url(Clock-bg.png);
+    background-color: #ffffff7c;
+    background-size: cover;
+    filter: invert(100%);
+    border-radius: 50%;
+}
+
+#circle img {
+    height: 5%;
+     width: 5%;
+}
+
+#circle {
+    border-radius: 50%;
+    position: absolute;
+    margin: auto;
+    left: 49%;
+    top: 50%;
+}
+
+#hour {
+    height: 23%;
+    width: 0.5%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 25%;
+    position: absolute;
+    left: 50.1%;
+    top: 28.5%;
+    transform-origin: bottom;
+    transition: 1s;
+}
+
+#minute {
+    height: 38%;
+    width: 0.35%;
+    border-radius: 25%;
+    background-color: #000000;
+    position: absolute;
+    left: 50%;
+    top: 13.5%;
+    transform-origin: bottom;
+    transition: 1s;
+}
+
+#second {
+    height: 46%;
+    width: 0.2%;
+    border-radius: 25%;
+    background-color: rgb(163, 163, 163);
+    position: absolute;
+    left: 50.1%;
+    top: 5.5%;
+    transform-origin: bottom;
+    transition: 1s;
+}
+
+#com {
+    font-family: Amsterdam, "Noto Nastaliq Urdu", Helvetica, sans-serif;
+    position: relative;
+    font-size: 1.3rem;
+    font-weight: 500;
+    right: 60px;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
